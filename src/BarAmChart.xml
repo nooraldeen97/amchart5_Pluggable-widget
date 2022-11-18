@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget
+    id="mendix.baramchart.BarAmChart"
+    pluginWidget="true"
+    needsEntityContext="true"
+    offlineCapable="true"
+    supportedPlatform="Web"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
+>
+    <name>Bar Am Chart</name>
+    <description>My widget description</description>
+    <icon />
+    <properties>
+        <propertyGroup caption="General">
+
+            <property key="StackList" type="datasource" isList="true" required="false">
+                <caption>Stack List</caption>
+                <description />
+            </property>
+            <property key="StackLabel" type="attribute" dataSource="StackList">
+                <caption>Stack Label</caption>
+                <description>Stack Label (String)</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+            <property key="SliceLabel" type="attribute" dataSource="StackList">
+                <caption>Slice Label</caption>
+                <description>Slice Label (String)</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+            <property key="SliceValue" type="attribute" dataSource="StackList">
+                <caption>Slice Value in Decimal</caption>
+                <description>Slice Value in Decimal</description>
+                <attributeTypes>
+                    <attributeType name="Decimal" />
+                </attributeTypes>
+            </property>
+            
+        </propertyGroup>
+    </properties>
+</widget>
